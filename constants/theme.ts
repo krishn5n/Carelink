@@ -5,27 +5,44 @@
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+// /app/utils/theme.ts
 
 export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
+  primary: '#007AFF',       // Blue - main brand color
+  secondary: '#4CD964',     // Green - actions / success buttons
+  background: '#F8F9FA',    // Light grey / off-white for backgrounds
+  cardBackground: '#FFFFFF', // White cards or containers
+  textPrimary: '#333333',    // Main text color
+  textSecondary: '#666666',  // Secondary text / labels
+  border: '#E0E0E0',         // Light border for inputs/cards
+  error: '#FF3B30',           // Red for errors / critical alerts
+  warning: '#FF9500',         // Orange for warnings
 };
+
+export const FontSizes = {
+  small: 12,
+  regular: 16,
+  medium: 18,
+  large: 24,
+  xlarge: 32,
+};
+
+export const Spacing = {
+  tiny: 4,
+  small: 8,
+  regular: 16,
+  large: 24,
+  xlarge: 32,
+};
+
+export const BorderRadius = {
+  small: 4,
+  medium: 8,
+  large: 12,
+  round: 9999,
+};
+
+
 
 export const Fonts = Platform.select({
   ios: {
